@@ -1,0 +1,13 @@
+[Student]-(View Courses), [Student]-(View Curriculum), [Student]-(View Activities), [Student]-(View Grades), (View Grades) > (LogIn),
+(View Courses)>(LogIn), (View Curriculum)>(LogIn), (View Activities)>(LogIn), (LogIn)<(Temporary Lock)
+[Teacher]-(View Students), [Teacher]-(Add Student), [Teacher]-(Add Grade),
+(Add Student)<(Already Exists), (Add Grade)-(Statistics),
+(View Students)>(LogIn), (Add Student)>(LogIn), (Add Grade)>(LogIn),
+[Administrator]-(Create Account), [Administrator]-(Add Subject)
+(Create Account)<(Already Exists)[Student]-(View Courses), [Student]-(View Curriculum), [Student]-(View Activities), [Student]-(View Grades), (View Grades) > (LogIn),
+(View Courses)>(LogIn), (View Curriculum)>(LogIn), (View Activities)>(LogIn), (LogIn)<(Temporary Lock)
+[Teacher]-(View Students), [Teacher]-(Add Student), [Teacher]-(Add Grade),
+(Add Student)<(Already Exists), (Add Grade)-(Statistics),
+(View Students)>(LogIn), (Add Student)>(LogIn), (Add Grade)>(LogIn),
+[Administrator]-(Create Account), [Administrator]-(Add Subject)
+(Create Account)<(Already Exists)
